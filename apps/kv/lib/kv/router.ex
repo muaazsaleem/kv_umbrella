@@ -31,8 +31,6 @@ defmodule KV.Router do
   The routing table.
   """
   def table do
-    #Replace computer name with you local machine name.
-    [{?a..?m, :"foo@plumgrid-Latitude-E5530-non-vPro"},
-     {?n..?z, :"bar@plumgrid-Latitude-E5530-non-vPro"}]
+    Application.fetch_env!(:kv, :routing_table)
   end
 end

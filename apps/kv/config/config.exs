@@ -1,4 +1,4 @@
-# This file is responsible for configuring your application
+  # This file is responsible for configuring your application
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
@@ -28,3 +28,8 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+# Replace computer-name with your local machine nodes.
+config :kv, :routing_table,
+       [{?a..?m, :"foo@plumgrid-Latitude-E5530-non-vPro"},
+        {?n..?z, :"bar@plumgrid-Latitude-E5530-non-vPro"}]
